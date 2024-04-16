@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectStorage">
+    <option name="folderId" value="c32741f1-df58-42f5-a3d0-ee70cc43f680" />
+    <option name="path" value="雅典娜的私有团队-&gt;大事件-&gt;文章分类相关接口" />
+    <option name="prefixUrlList">
+      <list>
+        <PrefixUrl>
+          <option name="moduleName" value="big-event" />
+          <option name="prefixUrl" value="http://localhost:8080" />
+          <option name="rowIndex" value="0" />
+        </PrefixUrl>
+      </list>
+    </option>
+    <option name="projectId" value="ac9ca86c-1ec3-45c8-b66b-c189aacd9945" />
+  </component>
+</project>
