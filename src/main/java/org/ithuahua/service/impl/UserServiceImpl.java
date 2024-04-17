@@ -1,9 +1,9 @@
 package org.ithuahua.service.impl;
 
-import org.ithuahua.mapper.UserMapper;
 import org.ithuahua.pojo.User;
 import org.ithuahua.service.UserService;
 import org.ithuahua.utils.Md5Util;
+import org.ithuahua.mapper.UserMapper;
 import org.ithuahua.utils.ThreadLocalUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

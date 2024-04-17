@@ -1,8 +1,8 @@
 package org.ithuahua.controller;
 
+import org.ithuahua.service.CategoryService;
 import org.ithuahua.pojo.Category;
 import org.ithuahua.pojo.Result;
-import org.ithuahua.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +16,7 @@ public class CategoryController {
     private CategoryService categoryService;
 
     @PostMapping("/add")
-    public Result add(@RequestBody @Validated Category category){
+    public Result add(@RequestBody @Validated(Category.Add.class) Category category){
         categoryService.add(category);
         return Result.success();
     }
@@ -34,8 +34,15 @@ public class CategoryController {
     }
 
     @PutMapping
-    public Result update(@RequestBody @Validated Category category){
+    public Result update(@RequestBody @Validated(Category.Update.class) Category category){
         categoryService.update(category);
         return Result.success();
     }
+
+    @DeleteMapping
+    public Result delete(Integer id){
+        categoryService.delete(id);
+        return Result.success();
+    }
+
 }

@@ -1,12 +1,12 @@
 package org.ithuahua.controller;
 
-import jakarta.validation.constraints.Pattern;
-import org.hibernate.validator.constraints.URL;
 import org.ithuahua.pojo.Result;
 import org.ithuahua.pojo.User;
+import org.ithuahua.utils.Md5Util;
+import jakarta.validation.constraints.Pattern;
+import org.hibernate.validator.constraints.URL;
 import org.ithuahua.service.UserService;
 import org.ithuahua.utils.JwtUtil;
-import org.ithuahua.utils.Md5Util;
 import org.ithuahua.utils.ThreadLocalUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;

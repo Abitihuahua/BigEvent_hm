@@ -1,8 +1,8 @@
 package org.ithuahua.service.impl;
 
 import org.ithuahua.mapper.CategoryMapper;
-import org.ithuahua.pojo.Category;
 import org.ithuahua.service.CategoryService;
+import org.ithuahua.pojo.Category;
 import org.ithuahua.utils.ThreadLocalUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -46,4 +46,10 @@ public class CategoryServiceImpl implements CategoryService {
         category.setUpdateTime(LocalDateTime.now());
         categoryMapper.update(category);
     }
+
+    @Override
+    public void delete(Integer id) {
+        categoryMapper.delete(id);
+    }
+
 }
